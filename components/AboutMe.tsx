@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function AboutMe() {
   return (
@@ -8,12 +8,15 @@ export default function AboutMe() {
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <p className="mb-4">
-              Hello! I'm a passionate web developer with expertise in React, Next.js, and modern frontend technologies.
-              I love creating beautiful and functional websites that provide great user experiences.
+              Hello! I am a passionate web developer with expertise in React,
+              Next.js, and modern frontend technologies. I love creating
+              beautiful and functional websites that provide great user
+              experiences.
             </p>
             <p className="mb-4">
-              With a strong foundation in HTML, CSS, and JavaScript, I enjoy tackling complex problems and turning ideas
-              into reality through code.
+              With a strong foundation in HTML, CSS, and JavaScript, I enjoy
+              tackling complex problems and turning ideas into reality through
+              code.
             </p>
           </div>
           <div>
@@ -45,12 +48,14 @@ export default function AboutMe() {
           >
             <Linkedin size={24} />
           </a>
-          <a href="mailto:your.email@example.com" className="text-gray-600 hover:text-gray-900">
+          <a
+            href="mailto:your.email@example.com"
+            className="text-gray-600 hover:text-gray-900"
+          >
             <Mail size={24} />
           </a>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
