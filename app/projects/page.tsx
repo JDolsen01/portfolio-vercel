@@ -1,5 +1,6 @@
-import Navigation from "@/components/Navigation"
-import Image from "next/image"
+import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -17,9 +18,12 @@ export default function Projects() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-xl font-semibold mb-2">E-commerce Platform</h2>
+              <h2 className="text-xl font-semibold mb-2">
+                E-commerce Platform
+              </h2>
               <p className="text-gray-600 mb-4">
-                A full-featured online store built with Next.js and Stripe integration.
+                A full-featured online store built with Next.js and Stripe
+                integration.
               </p>
               <a href="#" className="text-blue-500 hover:underline">
                 View Project
@@ -35,9 +39,12 @@ export default function Projects() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-xl font-semibold mb-2">Task Management App</h2>
+              <h2 className="text-xl font-semibold mb-2">
+                Task Management App
+              </h2>
               <p className="text-gray-600 mb-4">
-                A React-based application for managing tasks and projects with real-time updates.
+                A React-based application for managing tasks and projects with
+                real-time updates.
               </p>
               <a href="#" className="text-blue-500 hover:underline">
                 View Project
@@ -55,7 +62,8 @@ export default function Projects() {
             <div className="p-6">
               <h2 className="text-xl font-semibold mb-2">Weather Dashboard</h2>
               <p className="text-gray-600 mb-4">
-                A weather application that provides real-time forecasts using a third-party API.
+                A weather application that provides real-time forecasts using a
+                third-party API.
               </p>
               <a href="#" className="text-blue-500 hover:underline">
                 View Project
@@ -64,7 +72,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
-  )
+  );
 }
-

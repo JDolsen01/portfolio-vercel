@@ -31,30 +31,6 @@ export default function AboutMe() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 flex justify-center space-x-4">
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-gray-900"
-          >
-            <Github size={24} />
-          </a>
-          <a
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-gray-900"
-          >
-            <Linkedin size={24} />
-          </a>
-          <a
-            href="mailto:your.email@example.com"
-            className="text-gray-600 hover:text-gray-900"
-          >
-            <Mail size={24} />
-          </a>
-        </div>
       </div>
     </section>
   );

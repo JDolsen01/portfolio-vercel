@@ -1,46 +1,44 @@
-"use client"
+"use client";
 
-import { useCallback, useEffect, useState } from "react"
-import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const images = [
-  "/placeholder.svg?height=1080&width=1920&text=Image+1",
-  "/placeholder.svg?height=1080&width=1920&text=Image+2",
-  "/placeholder.svg?height=1080&width=1920&text=Image+3",
-]
+const images = ["/profile.jpeg", "/runner.jpeg"];
 
 export default function Parallax() {
-  const [offset, setOffset] = useState(0)
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [offset, setOffset] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setOffset(window.pageYOffset)
-    }
+      setOffset(window.pageYOffset);
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }, 5000) // Change image every 5 seconds
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   const handlePrevious = useCallback(() => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-  }, [])
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
+  }, []);
 
   const handleNext = useCallback(() => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
-  }, [])
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  }, []);
 
   return (
     <div className="relative h-screen overflow-hidden">
@@ -80,9 +78,10 @@ export default function Parallax() {
         </button>
       </div>
       <div className="relative z-10 flex h-full items-center justify-center">
-        <h1 className="text-4xl font-bold text-white md:text-6xl">Welcome to My Portfolio</h1>
+        <h1 className="text-4xl font-bold text-white md:text-6xl">
+          Welcome to My Portfolio
+        </h1>
       </div>
     </div>
-  )
+  );
 }
-
