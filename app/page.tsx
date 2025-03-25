@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { HeroSection } from "@/components/HeroSection";
+import { HeroSection } from "@/components/hero-section";
 
 export default function HomePage() {
   return (
@@ -15,7 +15,7 @@ export default function HomePage() {
       >
         <div className="container px-4 flex flex-col items-center text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white drop-shadow-md">
-            Jordan Olsen
+            Jane Doe
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 drop-shadow-md">
             Full Stack Developer & UI/UX Designer
@@ -52,7 +52,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-4">
               <p className="text-lg">
-                I'm a passionate developer with over 5 years of experience
+                I am a passionate developer with over 5 years of experience
                 building beautiful, functional websites and applications.
               </p>
               <p className="text-lg">
@@ -61,7 +61,7 @@ export default function HomePage() {
                 performant user experiences.
               </p>
               <p className="text-lg">
-                When I'm not coding, you can find me hiking, reading, or
+                When I am not coding, you can find me hiking, reading, or
                 experimenting with new technologies.
               </p>
             </div>
@@ -83,11 +83,11 @@ export default function HomePage() {
         <div className="container px-4 max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
           <p className="text-lg mb-8">
-            I'm currently available for freelance work and exciting
+            I am currently available for freelance work and exciting
             opportunities. Feel free to reach out!
           </p>
           <Button size="lg" asChild>
-            <Link href="mailto:jordan@example.com">Contact Me</Link>
+            <Link href="mailto:jane@example.com">Contact Me</Link>
           </Button>
         </div>
       </section>

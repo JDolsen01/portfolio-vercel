@@ -1,44 +1,29 @@
-import { CalendarIcon, ExternalLinkIcon } from "lucide-react";
-import Link from "next/link";
+import { CalendarIcon, ExternalLinkIcon } from "lucide-react"
+import Link from "next/link"
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { PageHeader } from "@/components/PageHeader";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { PageHeader } from "@/components/page-header"
 
 export default function JobsPage() {
   return (
     <>
-      <PageHeader
-        title="Work Experience"
-        description="My professional journey and career highlights"
-      />
+      <PageHeader title="Work Experience" description="My professional journey and career highlights" />
 
       <section className="py-16">
         <div className="container px-4">
           <div className="max-w-3xl mx-auto space-y-8">
             {jobs.map((job, index) => (
-              <Card
-                key={index}
-                className="border-l-4"
-                style={{ borderLeftColor: "hsl(var(--primary))" }}
-              >
+              <Card key={index} className="border-l-4" style={{ borderLeftColor: "hsl(var(--primary))" }}>
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                     <div>
-                      <CardTitle className="text-xl font-bold">
-                        {job.title}
-                      </CardTitle>
+                      <CardTitle className="text-xl font-bold">{job.title}</CardTitle>
                       <div className="flex items-center mt-1">
-                        <Link
-                          href={job.companyUrl}
-                          className="text-lg font-medium hover:underline"
-                          target="_blank"
-                        >
+                        <Link href={job.companyUrl} className="text-lg font-medium hover:underline" target="_blank">
                           {job.company}
                         </Link>
-                        {job.companyUrl && (
-                          <ExternalLinkIcon className="ml-1 h-4 w-4 text-muted-foreground" />
-                        )}
+                        {job.companyUrl && <ExternalLinkIcon className="ml-1 h-4 w-4 text-muted-foreground" />}
                       </div>
                     </div>
                     <div className="flex items-center text-muted-foreground">
@@ -71,7 +56,7 @@ export default function JobsPage() {
         </div>
       </section>
     </>
-  );
+  )
 }
 
 const jobs = [
@@ -80,8 +65,7 @@ const jobs = [
     company: "TechCorp Inc.",
     companyUrl: "https://example.com",
     period: "Jan 2021 - Present",
-    description:
-      "Leading the frontend development team in building and maintaining enterprise-level web applications.",
+    description: "Leading the frontend development team in building and maintaining enterprise-level web applications.",
     achievements: [
       "Redesigned the company's flagship product, resulting in a 40% increase in user engagement",
       "Implemented a component library that reduced development time by 30%",
@@ -94,8 +78,7 @@ const jobs = [
     company: "WebSolutions Ltd.",
     companyUrl: "https://example.com",
     period: "Mar 2018 - Dec 2020",
-    description:
-      "Developed responsive web applications for clients across various industries.",
+    description: "Developed responsive web applications for clients across various industries.",
     achievements: [
       "Built an e-commerce platform that handled over $2M in annual transactions",
       "Optimized site performance, improving load times by 60%",
@@ -115,22 +98,14 @@ const jobs = [
       "Created a design system that improved consistency across projects",
       "Reduced client revision requests by 50% through improved prototyping",
     ],
-    skills: [
-      "HTML/CSS",
-      "JavaScript",
-      "Figma",
-      "Adobe XD",
-      "Responsive Design",
-      "WordPress",
-    ],
+    skills: ["HTML/CSS", "JavaScript", "Figma", "Adobe XD", "Responsive Design", "WordPress"],
   },
   {
     title: "Junior Web Developer",
     company: "StartupHub",
     companyUrl: "https://example.com",
     period: "Sep 2014 - May 2016",
-    description:
-      "Assisted in the development of web applications for early-stage startups.",
+    description: "Assisted in the development of web applications for early-stage startups.",
     achievements: [
       "Contributed to 5 successful product launches",
       "Implemented responsive designs that worked across all major browsers",
@@ -138,4 +113,5 @@ const jobs = [
     ],
     skills: ["HTML/CSS", "JavaScript", "jQuery", "Bootstrap", "PHP", "MySQL"],
   },
-];
+]
+

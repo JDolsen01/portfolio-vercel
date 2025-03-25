@@ -1,40 +1,27 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { PageHeader } from "@/components/PageHeader";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { PageHeader } from "@/components/page-header"
 
 export default function ProjectsPage() {
   return (
     <>
-      <PageHeader
-        title="My Projects"
-        description="A showcase of my recent work and personal projects"
-      />
+      <PageHeader title="My Projects" description="A showcase of my recent work and personal projects" />
 
       <section className="py-16">
         <div className="container px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card
-                key={index}
-                className="overflow-hidden flex flex-col h-full"
-              >
+              <Card key={index} className="overflow-hidden flex flex-col h-full">
                 <div className="relative h-56">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
                 </div>
                 <CardContent className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4 flex-grow">
-                    {project.description}
-                  </p>
+                  <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, i) => (
                       <Badge key={i} variant="secondary">
@@ -52,7 +39,7 @@ export default function ProjectsPage() {
         </div>
       </section>
     </>
-  );
+  )
 }
 
 const projects = [
@@ -104,4 +91,5 @@ const projects = [
     link: "#",
     technologies: ["React Native", "Redux", "Express", "MongoDB"],
   },
-];
+]
+
