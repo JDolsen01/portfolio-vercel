@@ -1,5 +1,3 @@
-import { Github, Linkedin, Mail } from "lucide-react";
-
 export default function AboutMe() {
   return (
     <section className="bg-white py-16">
