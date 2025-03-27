@@ -52,7 +52,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-6">
             <section>
-              <h2 className="text-2xl font-bold mb-4">Overview</h2>
+              <h2 className="text-2xl font-bold mb-4">Description</h2>
               <div className="prose prose-slate dark:prose-invert max-w-none">
                 <p>{project.description}</p>
               </div>
