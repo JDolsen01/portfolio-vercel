@@ -4,7 +4,7 @@ export const jobsData = [
     title: "Senior Frontend Developer",
     company: "TechCorp Inc.",
     companyUrl: "https://example.com",
-    logo: "/placeholder.svg?height=200&width=200",
+    logo: "/tech-corp.jpg",
     period: "Jan 2021 - Present",
     description:
       "Leading the frontend development team in building and maintaining enterprise-level web applications. Responsible for architecture decisions, code quality, and mentoring junior developers.",
@@ -45,7 +45,7 @@ export const jobsData = [
     title: "Frontend Developer",
     company: "WebSolutions Ltd.",
     companyUrl: "https://example.com",
-    logo: "/placeholder.svg?height=200&width=200",
+    logo: "/web-solutions.jpg",
     period: "Mar 2018 - Dec 2020",
     description:
       "Developed responsive web applications for clients across various industries. Worked in an agile team to deliver high-quality frontend solutions that met client requirements and business objectives.",
@@ -86,7 +86,7 @@ export const jobsData = [
     title: "UI/UX Designer & Developer",
     company: "CreativeStudio",
     companyUrl: "https://example.com",
-    logo: "/placeholder.svg?height=200&width=200",
+    logo: "/creative-studio.jpg",
     period: "Jun 2016 - Feb 2018",
     description:
       "Worked in a dual role designing interfaces and implementing frontend code for web and mobile applications. Collaborated closely with clients to understand their needs and translate them into effective digital experiences.",
@@ -123,11 +123,50 @@ export const jobsData = [
     ],
   },
   {
+    name: "aidia",
+    title: "Junior Web Developer",
+    company: "AIDIA",
+    companyUrl: "https://example.com",
+    logo: "/aidia.jpeg",
+    period: "Sep 2014 - May 2016",
+    description:
+      "Assisted in the development of web applications for small companies. Gained experience in various technologies and development methodologies, including the use of AWS.",
+    achievements: [
+      "Contributed to 5 successful product launches",
+      "Implemented responsive designs that worked across all major browsers",
+      "Participated in code reviews and improved coding standards",
+      "Reduced bug count by 30% through implementation of unit testing",
+      "Created documentation that improved onboarding time for new developers",
+    ],
+    responsibilities: [
+      "Developing and maintaining website features using HTML, CSS, and JavaScript",
+      "Fixing bugs and improving website performance",
+      "Implementing responsive designs from mockups",
+      "Writing and maintaining documentation",
+      "Assisting senior developers with complex tasks",
+      "Learning new technologies and best practices",
+    ],
+    skills: [
+      "HTML/CSS",
+      "TypeScript",
+      "SST",
+      "SolidJS",
+      "React",
+      "Tailwind",
+      "Git",
+      "AWS",
+    ],
+    projects: [
+      "Find MOJO - A tool for finding motivational quotes and inspiration",
+      "Trademark Films- A video streaming platform for independent filmmakers",
+    ],
+  },
+  {
     name: "startuphub",
     title: "Junior Web Developer",
     company: "StartupHub",
     companyUrl: "https://example.com",
-    logo: "/placeholder.svg?height=200&width=200",
+    logo: "/startup-hub.jpg",
     period: "Sep 2014 - May 2016",
     description:
       "Assisted in the development of web applications for early-stage startups. Gained experience in various technologies and development methodologies while working in a fast-paced environment.",
