@@ -9,13 +9,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { jobsData } from "@/data/jobs";
 
 interface JobPageProps {
-  params: {
-    name: string;
-  };
+  params: Promise<{ name: string }>;
 }
 
-export default function JobPage({ params }: JobPageProps) {
-  const job = jobsData.find((j) => j.name === params.name);
+export default async function JobPage({ params }: JobPageProps) {
+  const ps = await params;
+  const job = jobsData.find((j) => j.name === ps.name);
 
   if (!job) {
     notFound();

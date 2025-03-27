@@ -8,13 +8,12 @@ import { Badge } from "@/components/ui/badge";
 import { projectsData } from "@/data/projects";
 
 interface ProjectPageProps {
-  params: {
-    name: string;
-  };
+  params: Promise<{ name: string }>;
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projectsData.find((p) => p.name === params.name);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const ps = await params;
+  const project = projectsData.find((p) => p.name === ps.name);
 
   if (!project) {
     notFound();
