@@ -26,7 +26,7 @@ export default function RootLayout({
           <footer className="py-6 border-t">
             <div className="container px-4 text-center">
               <p className="text-muted-foreground">
-                © {new Date().getFullYear()} Jane Doe. All rights reserved.
+                © {new Date().getFullYear()} Jordan Olsen. All rights reserved.
               </p>
             </div>
           </footer>

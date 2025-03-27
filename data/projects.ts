@@ -6,7 +6,7 @@ export const projectsData = [
       "A full-stack e-commerce solution with payment processing and inventory management.",
     description:
       "A comprehensive e-commerce platform built from the ground up to provide a seamless shopping experience. This solution includes robust payment processing, real-time inventory management, and a user-friendly admin dashboard. The platform is designed to be scalable and can handle high traffic volumes without compromising performance.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/ecom.jpg",
     liveUrl: "https://example.com/ecommerce",
     githubUrl: "https://github.com/username/ecommerce",
     technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
@@ -32,7 +32,7 @@ export const projectsData = [
       "A productivity app with drag-and-drop interface and real-time collaboration.",
     description:
       "A feature-rich task management application designed to boost productivity and streamline workflow. The app includes a drag-and-drop interface for easy task organization, real-time collaboration features, and customizable workflows to adapt to different project management methodologies.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/tasks.jpg",
     liveUrl: "https://example.com/taskapp",
     githubUrl: "https://github.com/username/taskapp",
     technologies: [
@@ -65,7 +65,7 @@ export const projectsData = [
       "A responsive portfolio website with dark mode and animations.",
     description:
       "A modern, responsive portfolio website designed to showcase creative work and professional achievements. The site features a clean, minimalist design with smooth animations, dark mode support, and optimized performance. The content management system allows for easy updates without requiring code changes.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/portfolio.jpg",
     liveUrl: "https://example.com/portfolio",
     githubUrl: "https://github.com/username/portfolio",
     technologies: [
@@ -96,7 +96,7 @@ export const projectsData = [
       "A weather application that provides real-time forecasts and interactive maps.",
     description:
       "A comprehensive weather dashboard that provides real-time forecasts, historical data, and interactive maps. Users can save their favorite locations, receive weather alerts, and view detailed meteorological information presented in an intuitive interface.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/weather.jpg",
     liveUrl: "https://example.com/weather",
     githubUrl: "https://github.com/username/weather",
     technologies: ["Vue.js", "OpenWeather API", "Chart.js", "Mapbox", "Vuex"],
@@ -121,7 +121,7 @@ export const projectsData = [
       "A web application that helps users discover recipes based on ingredients they have.",
     description:
       "An innovative recipe discovery platform that helps users find recipes based on ingredients they already have at home. The application includes filtering by dietary restrictions, meal types, and cooking time, making it easy for users to find recipes that match their preferences and constraints.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/recipe.jpg",
     liveUrl: "https://example.com/recipes",
     githubUrl: "https://github.com/username/recipes",
     technologies: [
@@ -152,7 +152,7 @@ export const projectsData = [
       "A mobile-first application for tracking workouts, nutrition, and progress.",
     description:
       "A comprehensive fitness tracking application designed with a mobile-first approach. The app allows users to track workouts, nutrition, and progress, set goals, and earn achievements. Custom workout plans and detailed analytics help users stay motivated and make informed decisions about their fitness journey.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/fitness.jpg",
     liveUrl: "https://example.com/fitness",
     githubUrl: "https://github.com/username/fitness",
     technologies: [
