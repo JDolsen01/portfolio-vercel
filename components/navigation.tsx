@@ -77,7 +77,7 @@ export function Navigation() {
                   onClick={() => setOpen(false)}
                 >
                   <Frame className="h-6 w-6" />
-                  <span className="font-bold">Jane Doe</span>
+                  <span className="font-bold">Jordan Olsen</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {routes.map((route) => (
